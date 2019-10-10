@@ -5,7 +5,6 @@ import vital.model.VitalModel
 
 @Mapper
 interface VitalMapper {
-
     fun find(): List<VitalModel>
 }
 

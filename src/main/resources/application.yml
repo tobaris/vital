@@ -3,13 +3,13 @@ spring:
     url: jdbc:mysql://localhost:3306/vital
     username: root
     password:
-      driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
 
-      mybatis:
-        mapper-locations: classpath*:/mybatis/mapper/*.xml
-        type-aliases-package: vital.model
-        configuration:
-          map-underscore-to-camel-case: true
-          default-fetch-size: 100
-          default-statement-timeout: 30
-          cache-enabled: false
+mybatis:
+    mapper-locations: classpath*:/mybatis/mapper/*.xml
+    type-aliases-package: vital.model
+    configuration:
+      map-underscore-to-camel-case: true
+      default-fetch-size: 100
+      default-statement-timeout: 30
+      cache-enabled: false
