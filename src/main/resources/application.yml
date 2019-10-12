@@ -6,8 +6,6 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
 
 mybatis:
-    mapper-locations: classpath*:/mybatis/mapper/*.xml
-    type-aliases-package: vital.model
     configuration:
       map-underscore-to-camel-case: true
       default-fetch-size: 100

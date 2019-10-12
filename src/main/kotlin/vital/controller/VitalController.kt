@@ -11,9 +11,6 @@ class VitalController(private val service: VitalService) {
 
     @GetMapping("/")
     fun index(model: Model): String  {
-        // model.addAttribute("modelList", service.find())
-        // model.set("modelList", service.find())
-        // Same as above .
         model["modelList"] = service.find()
         return "index"
     }

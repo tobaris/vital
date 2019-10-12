@@ -19,12 +19,11 @@
     </tr>
     <th:block th:each="model : ${modelList}">
         <tr>
-            <td th:text="${model.id}"></td>
-            <td th:text="${model.name}"></td>
-            <td th:text="${model.price}"></td>
-            <td th:text="${model.type}"></td>
-            <!--/* Same as ${model.toString()} */-->
-            <td th:text="${model}"></td>
+            <td th:text="${model.id}">1</td>
+            <td th:text="${model.name}">Apple</td>
+            <td th:text="${model.price}">150</td>
+            <td th:text="${model.type}">1</td>
+            <td th:text="${model}">SampleModel(id=1, name=Apple, price=150, type=1)</td>
         </tr>
     </th:block>
 </table>
